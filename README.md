@@ -27,15 +27,16 @@
 
 ## 紫微知道产品生态
 
-紫微知道（Ziwei Knows）由三款平级、互补的开源产品组成。它们服务不同的探索方式，不要求账号、命盘或数据互通。
+紫微知道（Ziwei Knows）由四款平级、互补的开源产品组成。它们服务不同的探索方式，不要求账号、命盘或数据互通。
 
 | 产品 | 适合什么需求 | 访问 |
 | --- | --- | --- |
 | **Ziwei Chart** | 想准确排盘、浏览十二宫、流年、合盘和长期趋势。 | [在线体验](https://zwknows.vercel.app/) · [GitHub](https://github.com/ziweiknows/ziwei-chart) |
 | **Ziwei Chat** `当前产品` | 已有命盘，想围绕事业、关系、财富或近况继续追问。 | [在线体验](https://ziweichat.vercel.app/) · [GitHub](https://github.com/ziweiknows/ziwei-chat) |
 | **ZATI** | 不想先填写出生信息，想通过行为选择探索人格原型。 | [在线体验](https://zati-kappa.vercel.app/) · [GitHub](https://github.com/ziweiknows/zati) |
+| **Ziwei Draw** | 想通过亲手抽牌布阵的仪式感，获得当下问题的觉察视角。 | 即将上线 · [GitHub](https://github.com/ziweiknows/ziwei-card) |
 
-想先看完整盘面和趋势，可以使用 [Ziwei Chart](https://zwknows.vercel.app/)；想从行为倾向开始认识自己，可以探索 [ZATI 东方人格原型](https://github.com/ziweiknows/zati)。Ziwei Chat 不要求它们作为前置条件，但会在个人盘面问题上使用确定性排盘事实。
+想先看完整盘面和趋势，可以使用 [Ziwei Chart](https://zwknows.vercel.app/)；想从行为倾向开始认识自己，可以探索 [ZATI 东方人格原型](https://github.com/ziweiknows/zati)；想通过仪式感在当下获得觉察，打开 [Ziwei Draw](https://github.com/ziweiknows/ziwei-card)。Ziwei Chat 不要求它们作为前置条件，但会在个人盘面问题上使用确定性排盘事实。
 
 ## 目录
 
@@ -174,7 +175,7 @@ npm run build:knowledge-embeddings
 
 ### 它和 Ziwei Chart 有什么区别？
 
-[Ziwei Chart](https://github.com/ziweiknows/ziwei-chart) 用于完整排盘与可视化浏览趋势、合盘和人生 K 线；Ziwei Chat 用于在事实基础上继续问“这对我当前的选择意味着什么”，并提供证据面板。
+[Ziwei Chart](https://github.com/ziweiknows/ziwei-chart) 用于完整排盘与可视化浏览趋势、合盘和人生 K 线；Ziwei Chat 用于在事实基础上继续问"这对我当前的选择意味着什么"，并提供证据面板。
 
 ### 不配置模型还能做什么？
 
@@ -186,7 +187,7 @@ npm run build:knowledge-embeddings
 
 ### ZATI 是 Ziwei Chat 的前置步骤吗？
 
-不是。[ZATI](https://github.com/ziweiknows/zati) 是紫微知道系列中独立的东方人格探索工具，不需要出生信息。它适合希望先从行为选择理解自己的人。
+不是。[ZATI](https://github.com/ziweiknows/zati) 是紫微知道系列中独立的东方人格探索工具，不需要出生信息。它适合希望先从行为选择理解自己的人。同样，[Ziwei Draw](https://github.com/ziweiknows/ziwei-card) 是独立的卡牌占卜工具，适合希望通过仪式感获得觉察的人。
 
 ## 项目结构
 
