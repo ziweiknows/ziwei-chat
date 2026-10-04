@@ -1,20 +1,71 @@
 # Project Status
 
-> Updated: 2026-07-19
-> Release target: Final V1+
+> Updated: 2026-10-04
+> Development phase: UI and Agent refactor preparation
+> Published baseline: v0.2.0
 > Authority: `docs/product/prd.md`, `docs/prompts/response-protocol.md`, and `docs/evaluation/acceptance-criteria.md`
 
 ## Current State
 
-Ziwei Chat is an anonymous, Vercel-first Ziwei Dou Shu workspace on branch
-`codex/ui-redesign-prep`. The accepted dark editorial UI is connected to real
-chart, Agent, evidence, records, Insights, settings, and deletion services. The
-user-supplied `ziwei-chat-redesign/` directory remains untracked, read-only
-reference material and is not part of the application build.
+Ziwei Chat is an anonymous, Vercel-first Ziwei Dou Shu workspace. The next
+development cycle covers a substantial UI refactor and a refactor of the Agent
+implementation technology. Work starts on `codex/ui-agent-refactor`, created
+from `master` at `ceef938a4ab8d50f864f690fa7d768b4294fcf77`.
 
-Final V1+ implementation and automated release Tasks 1-11 are complete. Tasks
-12-13 remain mandatory release gates, so the release is not yet declared
-complete.
+GitHub published `v0.2.0` on 2026-07-20. The existing workspace connects chart,
+chat, evidence, records, Insights, settings, and deletion services. The earlier
+`codex/ui-redesign-prep` branch was fully merged and has been removed. The old
+`ziwei-chat-redesign/` reference directory is absent from the current checkout.
+
+No replacement UI or Agent architecture has been selected yet. The existing
+product constitution, deterministic iztro chart boundary, anonymous identity,
+local knowledge baseline, and privacy contracts remain the starting constraints
+for the new design.
+
+## Repository Preparation (2026-10-04)
+
+- Remote branches were reduced to `master` and `codex/ui-agent-refactor`.
+- The merged UI branch and all 14 Dependabot branches were removed; the 14
+  corresponding dependency PRs were closed without merging their changes.
+- A verified Git bundle and the original branch/PR manifest are retained locally
+  under `.git/refactor-cleanup-20261004/`. This backup is not committed or pushed;
+  retain it before removing this checkout.
+- `master`, release tags, application source, database migrations, runtime
+  knowledge, and tests are unchanged by the preparation work.
+- The latest complete CI for the baseline commit passed on 2026-08-11: lint,
+  typecheck, 74 test files / 784 tests, 17 Agent evaluation cases with zero
+  failures, and production build. Three Postgres integration files / four tests
+  were skipped. This is remote CI evidence, not a fresh local test run.
+- Local dependencies and actual environment files are not installed/configured
+  in this checkout. Local database and real-provider acceptance have not been
+  repeated for the refactor baseline.
+
+## Refactor Starting Points
+
+1. Agree the new UI direction, user journeys, and component boundaries before
+   replacing the existing workspace presentation.
+2. Agree the Agent runtime, orchestration, model/provider integration, tool,
+   skill, retrieval, critic, and persistence boundaries. The baseline lists
+   Vercel AI SDK as a dependency, but the active provider path uses a custom
+   OpenAI-compatible HTTP/stream adapter. Memory/summary tool definitions exist
+   in local stores; they are not wired into a durable main-chat memory flow.
+3. Refresh dependencies and the lockfile as a separate verified change. Closing
+   the old update PRs did not fix their advisories. The 2026-10-04 lockfile audit
+   reports 28 affected packages: 1 critical, 17 high, and 10 moderate. Reachable
+   application risk still needs classification. The two latest sampled update
+   PRs failed dependency installation because the lockfile omitted esbuild
+   entries; this does not show a baseline application test failure.
+4. Carry forward the unproven provider-backed Insights, browser interaction,
+   accessibility, and visual acceptance scenarios below. Publishing a release
+   and cleaning branches do not establish that those scenarios passed.
+
+## Historical Final V1+ Record
+
+The remainder of this document preserves the July 2026 implementation and
+acceptance record. Its task statuses, environment details, test counts, and
+dependency audit figures describe those historical runs. They are not the
+current branch inventory, refactor plan, or current dependency assessment.
+Tasks 12-13 still lack complete closure evidence in that record.
 
 ## Implemented Product
 

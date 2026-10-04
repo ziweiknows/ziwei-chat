@@ -4,6 +4,13 @@
 > Authority: `docs/product/prd.md`, `docs/prompts/response-protocol.md`, and the current acceptance criteria.
 > Purpose: single register for what is complete, what remains, how each gap is designed, and what evidence closes it.
 
+> Historical Final V1+ acceptance register. GitHub subsequently published
+> v0.2.0 on 2026-07-20; the publication does not close scenarios without recorded
+> evidence. As of 2026-10-04, the active cycle is UI and Agent refactor preparation
+> on `codex/ui-agent-refactor`. See [Project Status](project-status.md) for the
+> current baseline. Retain the open scenarios below when defining the refactor
+> acceptance plan; the old task sequence is not the new implementation plan.
+
 ## Final Boundary
 
 The final target is a publishable open-source V1+ with an anonymous browser

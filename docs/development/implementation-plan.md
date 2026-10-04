@@ -2,6 +2,13 @@
 
 > Version: 2026-07-05
 
+> Historical MVP plan. On 2026-10-04, development moved to UI and Agent refactor
+> preparation on `codex/ui-agent-refactor`, based on the published v0.2.0 code
+> and current `master`. See [Project Status](project-status.md) for the current
+> repository baseline, inherited gaps, and refactor starting points. The phases
+> below retain the original implementation history; the new architecture and
+> implementation plan must be agreed before broad replacement work begins.
+
 ## Current Status
 
 The open-source MVP foundation is implemented and merged to `master` through PR
