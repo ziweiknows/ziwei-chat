@@ -231,6 +231,7 @@ npm run build
 
 欢迎提交 Issue 和 PR。对产品使用、Agent 协议、知识来源或界面体验的改进，请先阅读：
 
+- [当前重构交接与分支整理](./docs/development/refactor-handoff.md)
 - [产品定义](./docs/product/prd.md)
 - [Agent 架构](./docs/architecture/agent-architecture.md)
 - [提示词与响应协议](./docs/prompts/response-protocol.md)

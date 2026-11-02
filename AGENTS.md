@@ -86,6 +86,11 @@ The LLM must not invent chart facts, calculate Ziwei positions, or make irrevers
 
 ## Development Gate
 
+For the current UI and Agent refactor cycle, start with
+`docs/development/refactor-handoff.md` for branch ownership, preserved assets,
+dependency follow-up, backup recovery, and the distinction between current work
+and historical implementation records.
+
 Before implementation begins, review:
 
 - `docs/product/prd.md`

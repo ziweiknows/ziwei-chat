@@ -1,6 +1,6 @@
 # Project Status
 
-> Updated: 2026-10-04
+> Updated: 2026-11-02
 > Development phase: UI and Agent refactor preparation
 > Published baseline: v0.2.0
 > Authority: `docs/product/prd.md`, `docs/prompts/response-protocol.md`, and `docs/evaluation/acceptance-criteria.md`
@@ -22,7 +22,27 @@ product constitution, deterministic iztro chart boundary, anonymous identity,
 local knowledge baseline, and privacy contracts remain the starting constraints
 for the new design.
 
-## Repository Preparation (2026-10-04)
+## Repository Organization (2026-11-02)
+
+The active handoff is [UI and Agent Refactor Handoff](refactor-handoff.md).
+It records branch ownership, dependency work still required, reusable assets,
+historical documents, acceptance gaps, and recovery instructions.
+
+- Keep `master` as the application baseline and `codex/ui-agent-refactor` as
+  the preparation/development branch. Application code remains at the master
+  baseline; the refactor branch contains documentation changes only.
+- The 13 dependency PRs were closed without merging and their branches removed
+  after preserving a verified full Git bundle and branch/PR manifest under the
+  current checkout's `.git/refactor-cleanup-20261102/`. See the handoff for exact refs.
+- Dependency upgrades remain open work; no advisories were fixed by cleanup.
+  Dependabot settings are unchanged and future update branches may appear.
+- No application source, migrations, knowledge, dependencies, or tests were
+  changed. Application tests were not rerun during this organization pass.
+- The October backup described below belongs to the original machine and is
+  absent from this clone. The November backup is local to this machine and is
+  not committed or pushed.
+
+## Historical Repository Preparation (2026-10-04)
 
 - Remote branches were reduced to `master` and `codex/ui-agent-refactor`.
 - The merged UI branch and all 14 Dependabot branches were removed; the 14
